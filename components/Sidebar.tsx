@@ -26,7 +26,7 @@ export default function Sidebar() {
     <>
       {/*  MOBILE TOPBAR  */}
       <div className="md:hidden flex items-center justify-between px-4 py-3 bg-white shadow fixed top-0 left-0 right-0 z-50">
-        <div className="text-2xl font-bold bg-gradient-to-r from-blue-700/50 via-pink-500 to-red-500 bg-clip-text text-transparent tracking-widest">Coursera</div>
+        <div className="text-3xl font-bold bg-gradient-to-r from-blue-700/50 via-pink-500 to-red-500 bg-clip-text text-transparent tracking-widest">Coursera</div>
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="p-2 rounded-md hover:bg-gray-100 transition"
@@ -42,11 +42,11 @@ export default function Sidebar() {
         }`}
       >
         <div className="mt-16 md:mt-0">
-          <div className="p-6 text-4xl font-bold bg-gradient-to-r from-blue-700/50 via-pink-500 to-red-500 bg-clip-text text-transparent tracking-widest md:block hidden">
+          <div className="px-4 py-6 text-4xl font-bold bg-gradient-to-r from-blue-700/50 via-pink-500 to-red-500 bg-clip-text text-transparent tracking-widest md:block hidden">
             Coursera
           </div>
 
-          <nav className="mt-4 flex flex-col space-y-2">
+          <nav className="mt-4 flex flex-col space-y-4">
             {menuItems.map((item) => (
               <SidebarItem
                 key={item.href}
